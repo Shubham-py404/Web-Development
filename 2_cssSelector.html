@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        /* styling multiple tag or variable */
+        h1,h3{
+            /* background-color: blueviolet; */
+            color: brown;   
+        }
+        div{
+            /* background-color: cadetblue; */
+            color: coral;
+            /* using border */
+            border:1px solid black;
+        }
+        /* using * to style all elements margin and padding */
+        *{
+            margin: 0;
+            padding: 5;
+        }
+        /* <!-- decendent selector --> */
+        div p{
+            color: blue;
+        }
+        /* pseudo selectors */
+        a:visited{
+            color: rgb(0, 0, 0)
+        }
+        /* a :active */
+        a:active{ background-color: red;}
+        a:hover{background-color: aqua;}
+
+
+
+
+
+
+
+
+
+    </style>
+
+<!-- inline style takes priority -->
+
+
+
+</head>
+<body>
+
+    <h1><center>this is my css  </center></h1>
+
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, pariatur quo ex eaque, laborum temporibus nisi nesciunt molestias officia ipsum asperiores quibusdam perferendis animi dolore. Expedita eligendi odit et ullam!
+        </p>
+    </div>
+    <h3>hell</h3>
+    <!-- decendent selector -->
+    <!-- div ke andar p no matter how many tags -->
+    <div>
+        <article><p>hell</p></article>
+
+    </div>    
+
+    <!-- pseudo selectors4 -->
+    <!-- when some one visit the website it change color  -->
+    <a href="https://github.com/">github redirect </a>
+    <a href="https://www.facebook.com">facebook</a>
+</body>
+</html>
+
+<!-- priority of selector -->
+<!-- Inline Style-1000 > ID Selector-100 > Class or Attribute Selecto-10> Element Selector-1 > Universal Selector-0  if u use color: red !important th   is has highest priority  -->
+ 

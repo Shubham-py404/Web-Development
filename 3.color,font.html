@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>color</title>
+    <link rel="stylesheet" href="3.style.css" />
+    <style>
+      h1 {
+        color: white;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: rgba(11, 0, 138, 0.375);
+        color: beige;
+      }
+      /* adding image in the background */
+      body {
+        background-image: url("back.jpg");
+        /* u can use background-repeat: for repeat the imagees; space(for space) */
+      }
+      #stone {
+        border: 2px solid white;
+        width: 190px;
+        height: 290px;
+        color: rgb(255, 255, 255);
+        background-image: url(https://m.media-amazon.com/images/I/81m7gshq+TL._AC_UF894,1000_QL80.jpg);
+        background-attachment: local, scroll;
+        background-size: cover;
+      }
+      #demon {
+        border: 2px solid white;
+        width: 190px;
+        height: 290px;
+        color: rgb(255, 255, 255);
+        background-image: url(https://images-cdn.ubuy.co.in/633ffc80f53dd92c62572fb0-hislooks-demon-slayer-poster-12x16-inch.jpg);
+        background-size: cover;
+      }
+      /* importing font  */
+      @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap");
+      /* using font and size */
+      p {
+        color: white;
+        border: 2px solid red ;
+        font-family: "Baloo Bhaijaan 2", sans-serif;
+        text-overflow: 20;
+        font-size: 20;
+        line-height: 20;
+
+        
+
+        /* https://codepen.io/web-dot-dev/pen/ZELGraM   use for see types of fonts*/
+
+      }
+      .hee{
+        color: white;
+        text-transform: capitalize;
+        text-decoration: underline;
+        text-decoration-color: aquamarine;
+        /* most important */
+        text-indent: 45px;
+        text-align: center;
+
+
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1><center>this is title</center></h1>
+    <div class="container">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem aspernatur
+      aliquid libero hic doloribus. Nihil aliquam, provident, ratione hic
+      distinctio ea quo fugiat, corrupti nisi rerum alias eos omnis illo
+    </div>
+    <!-- using contain , cover, auto witdth (making image card) -->
+    <footer id="demon"><h3>Demon slayer kimitsu no yaiba</h3></footer>
+    <footer id="stone"><h3>Dr.Stone the new world</h3></footer>
+
+    <p>this is font sizing</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corporis quibusdam, debitis harum libero alias modi magnam doloribus facere maiores quam non architecto neque accusamus.</p>
+
+    
+    <h1 class="hee">this is heading</h1>
+
+ 
+  </body>
+  <!-- how to use background settings in one line -->
+  <!-- background: color url no-repeat fixed right tap  -->
+   <!-- hsl- heu saturatiom lightening -->
+</html>

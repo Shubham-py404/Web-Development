@@ -1,0 +1,9 @@
+*{
+    padding:10;
+    margin: 10;
+}
+.red{background-color: brown;  color: white}
+.green{
+     background-color: #3BF660;/* hex code */
+    color: white;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>size units</title>
+    <style>
+      html {
+        font-size: 32px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background-color: burlywood;
+        box-sizing: border-box;
+        border: 3px solid black;
+        width: 80vw;
+        height: 10vh;
+        margin: 23px auto;
+      }
+      .container {
+        background-color: burlywood;
+        box-sizing: border-box;
+        border: 3px solid black;
+        width: 80vw;
+        height: 80vh;
+        font-size: 16px;
+        margin: auto;
+        min-width: 80vh;
+      }
+
+      .container P {
+        /* container got 16 px but paro got 32 because of 2em multiply hoga  */
+        font-size: 2em;
+        /* font-size: 2rem; will double the rext size of root element html 32 to 64 */
+      }
+
+      .hell {
+        background-color: red;
+        color: yellow;
+        font-size: 22px;
+        /* vmin- height means 100vh in laptop for phone 100vw or vmax */
+        width: 100vmin;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">this is box</div>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
+        delectus molestiae totam, esse consequatur modi, suscipit autem,
+        necessitatibus similique dicta ipsum. Ut, fugiat, itaque recusandae id
+        deserunt dignissimos maiores, at aperiam minima quia commodi repellat
+        incidunt!asdkdfj dfd f as fdjf af af asdf dsfef f d gfdks dfs scsh sju
+        contaomrer student han d Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Repellendus nesciunt sint nemo numquam consequuntur
+        commodi recusandae optio, eius adipisci voluptates aliquam, voluptas
+        sequi, impedit facilis placeat illo quas quam dignissimos! as fdjf af af
+        asdf dsfef f d gfdks dfs scsh sju contaomrer student han d Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Repellendus nesciunt sint
+        nemo numquam consequuntur commodi recusandae optio, eius adipisci
+        voluptates aliquam, voluptas sequi, impedit facilis placeat illo quas
+        quam dignissimos!as fdjf af af asdf dsfef f d gfdks dfs scsh sju
+        contaomrer student han d Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Repellendus nesciunt sint nemo numquam consequuntur
+        commodi recusandae optio, eius adipisci voluptates aliquam, voluptas
+        sequi, impedit facilis placeat illo quas quam dignissimos!as fdjf af af
+        asdf dsfef f d gfdks dfs scsh sju contaomrer student han d Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Repellendus nesciunt sint
+        nemo numquam consequuntur commodi recusandae optio, eius adipisci
+        voluptates aliquam, voluptas sequi, impedit facilis placeat illo quas
+        quam dignissimos!
+      </p>
+    </div>
+    <div class="hell">
+      this is contaier acontainer is very gernorois this is help sto develiom
+      kthe web siter
+    </div>
+    <div class="hello">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+      architecto unde alias, minima aut, quis vitae laboriosam provident
+      voluptatem dicta ex doloremque amet velit odio magni totam porro est rerum
+      incidunt. Cumque quas molestias sequi quasi. Nostrum consequuntur
+      voluptatum cum non quos sapiente dignissimos eveniet, eligendi pariatur
+      aspernatur quis error quasi numquam nisi itaque exercitationem
+      voluptatibus!
+    </div>
+    <div>
+      <img src="font sizes.png" alt="font" height="1070px" />
+    </div>
+  </body>
+</html>
