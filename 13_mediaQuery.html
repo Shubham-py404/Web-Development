@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: plum;
+            
+        }
+        @media screen and (orientation: landscape){
+            body{
+                border: 12px solid bisque;
+            }
+        }
+        /* media query syntax */
+        /* jaise hee screen witdth 455 se km hoga color change hojaaeyega */
+        @media only screen and (max-width:455px ){
+            body{
+                background-color: rgb(245, 130, 130);
+            }
+        }
+        .box{
+            background-color: aquamarine;
+            width: 344px;
+            padding: 3px;
+            height: 344px;
+            margin: 3px;
+        }
+        .boxes{
+            display: flex;
+        }
+    </style>
+
+</head>
+<body>
+    <div> 
+        hey using media query today !
+    </div>
+    <div class="boxes">
+       <div class="box"></div>
+       <div class="box"></div>
+       <div class="box"></div>
+    </div>
+</body>
+</html>
