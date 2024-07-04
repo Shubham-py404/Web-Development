@@ -3,41 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card</title>
+    <title>Pizza</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      
+        :root{
+            --back:rgb(67, 235, 117);
+            --primary-color:rgb(55, 55, 55);
+            --text-color:rgb(0, 183, 0);
+        }
+        header{
+            width: 1283px;
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            background-color:var(--primary-color);
+            padding: 25px ;
+        }
+        nav ul li{
+            list-style: none;
+            display: inline;
+            color: var(--text-color);
+            padding: 20px;
+            font-weight:lighter;
+        }
+        li a{
+            text-decoration: none;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+        li a:hover{
+            border: 2px solid white;
+            background-color: white;
+            color: black;
+            border-radius: 17px;
+            padding: 7px;
+        }
         body{
             background-color: gray;
             /* padding: 114px 300px; */
-            display: flex;
-            
-       }
+            padding: 0;
+            margin: 0;
+            display: flex ;
+            flex-wrap: wrap;
+           }
         .card{
             border: 1px solid rgb(255, 255, 255) ;
             height: 400px;
             width: 300px;
             border-radius: 10px;
             background-color: white;
-            box-shadow: 2px 5px 5px rgb(94, 94, 94) ;
+            box-shadow: 2px 3px 3px rgb(94, 94, 94) ;
             margin: 8px;
-            
         }
         .maf{
             padding:4.2px;
             border: transparent;
             border-radius: 99px;
-            
         }
         .maf img{
             border-radius: 10px;
-            box-shadow: 0px 4px 3px rgb(94, 94, 94) ;
-
-            
+            box-shadow: 0px 4px 3px rgb(94, 94, 94) ;  
         }
         .more{
             background-color:rgb(216, 236, 253) ;
             border: 1px solid rgb(189, 222, 253);
-            padding: px;
             margin: 108px;
             border-radius: 22px;
             position: relative;
@@ -50,16 +81,14 @@
             left : 8px;
             font-size: small;
             font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            cursor: pointer;
-           
+            cursor: pointer;           
         }
         .ing{
             color: gray;
             font-size: 14px;
             padding: 22px;
             position: relative;
-            bottom: 40px;
-            
+            bottom: 40px;           
         }
         .food{
             top: 3px;
@@ -71,7 +100,6 @@
            padding: 3px 7px;
            font-size:13px;
            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
         }
         .pizz{
             top: 3px;
@@ -98,9 +126,22 @@
             background-color:rgb(169, 211, 250) ;
             color: rgb(13, 125, 230) ;
         }
+        
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Menu</a></li>
+                <li><a href="accessories.html">Services</a></li>
+                <li><a href="accessories.html">Blog</a></li>
+                <li><a href="accessories.html">About</a></li>
+                <li><a href="accessories.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="card">
         <div class="maf"><img src="pizza.jpg" alt="pizza" height="195px" ></div>
         <span class="food">Food</span>
@@ -110,12 +151,12 @@
         <div class="more"><div class="moi">Read more</div></div>
     </div>
     <div class="card">
-        <div class="maf"><img src="https://theclubcafe.in/cdn/shop/products/tpc3_640x.png?v=1597865259" alt="pizza" height="190px"></div>
+        <div class="maf"><img src="https://theclubcafe.in/cdn/shop/products/tpc3_640x.png?v=1597865259" alt="pizza" height="215px"></div>
         <span class="food">Food</span>
         <span class="pizz">Pizza</span>
         <div class="pizza"><h2>Sweet corn Pizza</h1></div>
-        <div class="ing">Set a pizza stone on a rack in the top third of the oven. Preheat the oven to 500° for at least 45 minutes. Meanwhile, remove the dough ball from the refrigerator and let stand for 20 minutes.</div>
-        <div class="more"  ><div class="moi" >Read more</div></div>
+        <div class="ing" style="font-size: small;">Set a pizza stone on a rack in the top third of the oven. Preheat the oven to 500° for at least 45 minutes. Meanwhile, remove the dough ball from the refrigerator and let stand for 20 minutes.</div>
+        <div class="more" style="position: relative; bottom: 175px;" ><div class="moi" >Read more</div></div>
     </div>
     <div class="card">
         <div class="maf"><img src="https://d3gy1em549lxx2.cloudfront.net/f41e714d-1240-4e5d-aea1-3de7738f2c27.JPG" alt="pizza" height="195px" ></div>
@@ -126,7 +167,7 @@
         <div class="more"><div class="moi">Read more</div></div>
     </div>
     <div class="card">
-        <div class="maf"><img src="pizza.jpg" alt="pizza" height="195px" ></div>
+        <div class="maf"><img src="https://keyafoods.com/cdn/shop/articles/Classic_Chicken_Burger_36.png?v=1704438823&width=1100" alt="pizza" height="195px" ></div>
         <span class="food">Food</span>
         <span class="pizz">Pizza</span>
         <div class="pizza"><h2>farm house Pizza</h1></div>

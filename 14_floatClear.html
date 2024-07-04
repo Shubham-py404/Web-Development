@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floatClear</title>
+    <style>
+        .cards{
+            border: 2px solid black ;
+            display: flow-root;/* prevents overflow of image */
+        }
+        img{
+            /* yeh allow krega content ko right side mai float krne mai  */
+            float: left;
+        }
+        .card{
+            border: 2px solid black;
+        }
+        .card:nth-child(2){
+            /* colors only first line */
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD2_uQIeca00uW1W2C7T6yMyxi1bQbJgCCSA&s" alt=" donut" height="156px">
+        <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti dolore sequi, facilis ex, inventore quidem praesentium mollitia provident illo iusto expedita quasi necessitatibus.</div>
+        <div class="card">card 1</div>
+        <div class="card">card 2</div>
+        <div class="card">card 3</div>
+        <div></div>
+        <div></div>
+        <html></html>
+    </div>
+</body>
+</html>

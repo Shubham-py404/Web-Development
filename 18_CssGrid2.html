@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 80vw;
+            border: 2px solid black;
+            display: grid;
+            height: 500px;
+            padding: 22px;
+            justify-items: center;
+            /* grid-template-areas: "nav  nav   nav"
+                                 "side article article"
+                                 "footer footer foot"; */
+            /* grid-template-columns: 1fr 2fr 1fr ;  */
+            /* fr means unit  puri width ka 1 fraction 3 baar mtlb width ko 3 parts mai div krdia isko row mai bi  use kr skte  */
+            grid-template-columns: repeat(4,1fr); 
+            /* or we can use repeat function (repeats 1fr 4 times) */
+            grid-template-columns: repeat(4, minmax(100px,1fr));
+            /* minimum 100 px max 1fr aur use 4 mai div krega */
+        }
+        .item{
+            border: 4px solid  rgb(255, 4, 4);
+            height: 155px; 
+             width: 120px;
+        }
+        .item-1{
+            color: rgb(0, 106, 255);
+            /* grid-area: nav; */
+            background-color: orange;
+            /* first waale ne pure nav ka space liya */
+            /* ab item 1 ka box wha place hoga jha nav hai top left ye box ko place krne ka tarika hai  */
+        }
+        .item-2{
+            background-color: pink;
+            /* grid-area: side; */
+            align-self: start; 
+            /* border ke start mai aajaay */
+        }
+        .item-3{
+            /* grid-area: article; */
+            background-color: brown;
+        }
+        .item-4{
+            background-color: burlywood;
+            /* grid-area: footer */
+        }
+        .item-5{
+            /* grid-area: foot; */
+        } 
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+</body>
+</html>

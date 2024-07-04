@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more css selector</title>
+    <style>
+        /* .boxes:first-child{
+            background-color: rgb(0, 0, 0);
+        } */
+        /* .boxes *{
+            color: rgb(38, 92, 255); 
+            border: 2px solid rgb(0, 0, 0);  
+        }*/
+        /* .box::first-line{
+            highlights only first line
+            color: yellow;
+        }   */
+        /* .boxes, [data-color="primary"]{
+            padding-top: 100px;
+        }  */
+        /* .box:nth-child(even) {
+              even waala child color hojaayega 
+            background-color: blue; 
+         }   */
+        /* .box:last-child{
+            background-color: blue;
+        } */
+        .boxes::before {
+           color: blue;
+           content: 'hell';
+        }
+        .boxes::after{
+            content: 'web development';
+            color: red;
+        }
+        .boxes,::selection{
+            color: aqua;
+        }
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+        .box::first-letter{
+            color: red;
+            font-size: 35px;
+        }
+        input::placeholder{
+          color: rgb(118, 118, 176);  
+          font-size: 22px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+        <input type="text" placeholder="type ur name ">
+    </div>
+</body>
+</html>

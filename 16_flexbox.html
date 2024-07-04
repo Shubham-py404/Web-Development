@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS flexbox</title>
+    <style>
+        .container{
+            border: 2px solid blue;
+            display: flex;
+            /* make items form left to right and changes the default behaviour */
+            height: 80vh;
+            /* flex-wrap: wrap;helps in optimisatin */
+            justify-content: center; centers in horizontal way 
+            /* align-items: center; centers in vertical way  */
+            /* flex-direction: column; makes item into row
+            flex-direction: column-reverse; invert the items last to first and first to last */
+            align-content: center;
+            /* flex-flow: row wrap; */
+            /* ye property dir and wrap set krne ke kaam aati hai  */
+            /* gap: 30px;  */
+            row-gap: 20px;
+            column-gap: 20px;
+            flex-grow: 1;/* har element equal jgha lega iska opposite flex shrink*/
+        }
+        /* order element helps the flex item to display in order  */
+        .order1{
+            order: 2;
+            flex-grow: 2;
+            align-self: flex-end ;
+            /* specific item ko end ya start mai rkhna   */
+        }
+        .order2{
+            align-self: flex-start;
+            order: 1;
+        }
+        .item{
+            
+            width: 92px;
+            height: 92px;
+            border: 2px solid black;
+            /* margin: 2px; */
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item order1">1</div>
+            <div class="item order2">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
+            <div class="item">10</div>
+            <div class="item">11</div>
+            <div class="item">12</div>
+            <div class="item">13</div>
+            <div class="item">14</div>
+            <div class="item">15</div>
+            <div class="item">16</div>
+            <div class="item">17</div>
+            <div class="item">18</div>
+
+        </div>
+    </main>
+</body>
+</html>

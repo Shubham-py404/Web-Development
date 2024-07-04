@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation with box</title>
+    <style>
+        *{
+          padding: 0;
+          margin: 0;
+        }
+        :root{
+            --back:rgb(255, 255, 255);
+            --primary-color:rgb(0, 0, 0);
+            --text-color:rgb(255, 255, 255);
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            border: 2px solid black;
+            background-color: black;
+            padding: 25px ;
+           
+        }
+        nav ul li{
+            display: inline;
+            list-style: none;
+            color:var(--text-color) ;
+            padding: 50px ;
+        }
+        .boxes{
+          border: 1px solid black;
+          background-color: #FAFFAF ;
+          padding: 22px;
+          margin: 9px;
+          display: flex;
+        }
+        .box1{
+          border: 1px solid black;
+          background-color: #3FA2F6 ;
+          padding: 221px;
+          margin: 55px;
+        }
+        .box2{
+          border: 1px solid black;
+          background-color: #0F67B1 ;
+          padding: 221px;
+          margin: 55px;
+        }
+        .capsule{
+            background-color:  #E7D4B5;
+            border: 2px solid black;
+            margin: 33px;
+            padding: 80px;
+            border-radius: 222px;
+        }
+        .icon{
+            /* border: 2px solid black; */
+            border-radius: 60px;
+            background-color: #B6C7AA;
+            padding: 20px;
+            /* margin: 35px; */
+            position:sticky;
+            bottom: 45px;
+            width: 23px;
+            height: 32px;
+            left: 1000px;
+           
+            
+           
+        }
+        footer{
+            border: 2px solid black;
+            padding: 50px;
+            color: white;
+            background-color: #76ABAE;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="boxes">
+        <div class="box1"><h1>hello_</h1></div>
+        <div class="box2"><h1>bye_</h1></div>
+    </div>
+
+    <div class="capsule"><h2> <center> Welcome to this Sigma Web Development Express</center></h2></div>
+
+    <div class="icon"></div>
+
+    <footer>this is footer</footer>
+</body>
+</html>

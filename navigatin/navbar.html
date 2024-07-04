@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar</title>
+    <style>
+        :root{
+            --back:rgb(255, 255, 255);
+            --primary-color:rgb(0, 0, 0);
+            --text-color:rgb(255, 255, 255);
+        }
+        body{
+            background-color:var(--back) ;
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            background-color:var(--primary-color);
+            padding: 12px ;
+        }
+        ul li{
+            list-style: none;
+            display: inline;
+            color: var(--text-color);
+            padding: 20px;
+            font-weight:lighter;
+        }
+         li a{
+            text-decoration: none;
+            color: var(--text-color);
+            cursor: pointer;
+        }
+        li a:hover{
+            border: 2px solid white;
+            background-color: white;
+            color: black;
+            border-radius: 17px;
+            padding: 7px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Hello</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="accessories.html">accessories</a></li>
+                <li>display</li>
+                <li>laptops</li>
+                <li>support</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
