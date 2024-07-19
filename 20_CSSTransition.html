@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitiion</title>
+</head>
+<style>
+    .container{
+        width: 50vw;
+        height: 50vh;
+        background-color: rgb(36, 255, 251);
+    }
+    .box{
+        width: 8vw;
+        height: 8vh;
+        background-color: #c63939;
+        /* transition-property: all; */
+        /* ye tab use hota hai jb hum saary prop ka trans krna ho  */
+
+
+        /* transition-property:  background-color, transform  ; */
+        /* isme sirf 2 prop ka transition hoga; */
+
+        /* transition-duration:2s ; */w
+        /* duration ki transition kitni der chlega */
+
+        /* transition-timing-function:ease-in-out ; */
+
+        /* transition-delay: 0s; */
+        /* start krne mai delay itna hoga click krne ke baad  */
+
+        transition: all 3s ease-in-out 1s;
+        /* using all prop at once  type transition duration  timing func and delay  */
+    }   
+    .translate{
+        background-color: bisque;
+        transform: translatex(10vw) translatey(10vh) scale(2);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box translate transform">
+            class
+        </div>
+    </div>
+    
+</body>
+</html>

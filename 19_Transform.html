@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .box{
+            
+            height: 50px;
+            width: 50px;
+            background-color: #d63f3f;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* transform: rotatez(70deg); */
+            /* ye x axis ke abt rot hoga  */
+
+            transform: rotate(20deg);
+            /* turns bux by x degrees */
+
+            /* transform: scale(1.5); */
+            /* utne times bda hojaayega */
+
+            /* transform: scale3d(1.5); */
+
+            /* transform:skew(5deg); */
+            /* rhombus shape ya aur slopyy shape bna skta hai  */
+
+            /* transform: rotate(0.5turn); */
+            /* 180 turn hojaayeg */
+
+            /* transform: translatex(100px); */
+            /* translate()  moves an element from its current position (according to the parameters given for the X-axis and the Y-axis). */
+ 
+            /* transform: translatex(100px) translatey(200px) skew(5deg); */
+            /* multi use  */
+            transform-origin: 0% 0%;
+            /* ab rotation ya aur kuch sb ek point pe hoga  */
+             
+        }
+        .container{
+            width: 100vW;
+            height: 80vh;
+            border: 2px solid blue;
+            margin: 60px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        hell
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object fit and position</title>
+    <style>
+      .container {
+        width: 466px;
+        height: 488px;
+        border: 2px solid black;
+        background-color: burlywood;
+        /* background-image:url(https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ; */
+        /* adding image as background  in container */
+        background-position: center center;
+        /* same as image position we can also do 10px 10px */
+
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqjs1fm0QURiqwhsTXg60z7axc05kHfcChVA&s);
+        /* if image was smaller than background */
+        
+        /* background-repeat: no-repeat; */
+        background-repeat: repeat-x;
+        background-repeat: repeat-y;
+
+      }
+      img {
+        width: 466px;
+        height: 488px;
+        /* object-fit: cover; */
+        /* yeh prop img ko fit krne mai kaam aati hai box ke andar proper fit ke liye ye img ko crop kr deti hai */
+
+        /* object-position: top right; */
+        /* agr hume img puri fit krni hai lekin hume ek specific portion jo crop hogya hum use rkh skte hai  */
+
+        object-fit: contain;
+        /* yeh image ko fit nhi krta full image ko bina crop kre place krta hai jisse image small and piche ka box visible ho jaata hai  */
+
+        /* object-fit: fill; */
+        /* fill krega without crop stretch hojaaegi*/
+
+        /* object-fit: scale-down; */
+        /* size chota hojaaeyega */
+
+        object-position: 10px 70px;
+        /* isme image ki puri pos change kr skte hai  */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <img
+        src="https://images.pexels.com/photos/7238759/pexels-photo-7238759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      /> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 30vw;
+            background-color: aqua;
+        }
+        .box{
+            width: 24vw;
+            height: 25vh;
+            /* background-color: bisque; */
+            /* animation: thisisAnimation ; */
+            /* isme basically variable dalta hai jo seperately banta hai */
+
+            /* animation-duration:  3s; */
+            /* duration of time of animation or transition  */
+
+            /* animation-iteration-count: 3; */
+            /* no. of times animation will repeat it can be infinite */
+
+            /* animation-timing-function: ease; */
+            /* speed of animation */
+
+            /* animation-delay: 2s; */
+            /* time after animation  starts */
+            
+            /* animation-direction:reverse; */
+        
+            /* animation-play-state: paused ; */
+
+            animation:  thisisAnimation 3s forwards 3s 1 ,
+                        shub 3s ease-in-out 3s 1;
+            /* all in one */
+        }
+        @keyframes thisisAnimation{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translatex(300px);
+            }
+        }
+        @keyframes shub{
+            0%{
+               transform: rotate(80deg); 
+
+            }
+            20%{
+                transform: rotate(100deg);
+            }
+            50%{
+                transform: rotate(200deg);
+            }
+            80%{
+                transform: rotate(220deg);
+            }
+            100%{
+                transform: rotate(300deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           box  
+        </div>
+    </div>
+</body>
+</html>
