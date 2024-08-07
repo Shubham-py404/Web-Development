@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event bubbing</title>
+    <style>
+        .child{
+            background-color: rgb(164, 212, 235);
+            border: 2px solid #000000 ;
+            padding: 23px;
+            margin: 14px;
+            cursor: pointer;
+        }
+        .ChildContainer{
+            background-color: white;
+            padding: 14px;
+            margin: 14px;
+        }
+        .container{
+            background-color: aqua;
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="ChildContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            alert("dont click it ")
+        })
+        document.querySelector(".ChildContainer").addEventListener("click", (e) => {
+             alert("dont click it ")
+        })
+        document.querySelector(".ChildContainer").addEventListener("click", (e) => {
+             e.stopPropagation()
+             alert("dont click it ")
+            // agr hum child ka event bnayenge toh th parent waala bhi activate hogatohagrhum parent waala stop krde toh child ka bhi hjaayega /
+        })
+        let bh= {
+                1:"red",
+                2:"green",
+                3:'blue'
+            }
+        let r = Math.floor(Math.random()*3)
+        let  a= setInterval(()=>{
+            document.querySelector(".childContainer").style.background = bh[r]
+        },3000);
+        // set ineterval har command ko repeat krega
+        console.log(a);
+        // print the value interval no. vise iski  1 hai 
+
+        let  b= settimeout(()=>{
+            document.querySelector(".childContainer").style.background = bh[r]
+        },1000);
+        // works like set interval but non repeating
+
+        // for cleari ng(stopping) use clear interval or timeout in console
+
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">I am a box</div>
+      <div class="hid" hidden>this div is hidden</div>
+      <div class="box" data-cratedby="shubham">this data created by shubham</div>
+    </div>
+    <script>
+        let div = document.createElement("div");
+        div.innerHTML= "I have been inserted by shubham"
+        div.setAttribute("class","created"); 
+        document.querySelector(".container").append(div)
+        // or . append hamesha element last div mai hee krega x
+    </script>
+  </body>
+</html>
+<!-- see notes  page 40-->
+<!-- wanna see video - https://youtu.be/KB7GzBv5p4Q?si=rstf41PHzmTZRVz1 -->
