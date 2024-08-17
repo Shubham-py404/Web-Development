@@ -29,7 +29,7 @@ async function sleep() {
     let {a,b} = obj 
     console.log(a,b);
     
-
+// another example
     function sum (a,b,c){
         return a + b + c
     }
@@ -37,6 +37,17 @@ async function sleep() {
     console.log(sum(...arr));
     
 })()
+
+
+
+// hoisting-isme hum log let or const ki jgha var use krte hai hai agr koi element devlare niche hua aur variable upar use hua toh normally let aur const "cannot access" dikhaayenge lekin var se wo upar hee declared krega jisse wo error nhi aayega 
+
+function nope(hk){
+    console.log(hk);
+    var hk  = "hello world"
+}
+    
+nope()
 
 
 
