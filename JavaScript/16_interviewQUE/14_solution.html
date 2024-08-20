@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll</title>
+    <style>
+        img{
+            padding: 27px;
+            height: 478px;
+        }
+    </style>
+</head>
+<body>
+    <button>press to scroll</button>
+    <div class="top"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnumdG39S4IkZR-4yDYcLyndZSbc6qB9fv-Q&s" alt=""></div>
+    <div><img src="https://cdn.wccftech.com/wp-content/uploads/2017/07/Forza-Motorsport-7-Porsche-GT2-RS-4K-Front-Angle-scaled.jpg" alt=""></div>
+    <div class="bottom"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-n9LdrSa556neeX-JoY8N7_vIzUU2lvwS7g&s" alt=""></div>
+    <script>
+        document.querySelector("button").addEventListener
+        ("click",()=>{
+            window.scrollTo({
+            top:document.querySelector(".bottom").offsetTop,
+            behavior:"smooth"
+            })
+        })
+    </script>
+</body>
+</html>
