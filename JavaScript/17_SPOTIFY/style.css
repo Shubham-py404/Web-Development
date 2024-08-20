@@ -2,3 +2,15 @@ body{
     background-color: black;
     color: white;
 }
+
+.left{
+    background-color: rgb(16, 16, 16);
+    width: 30vw;
+    height: 200px;
+}
+
+.right{
+    background-color: rgb(16, 16, 16);;
+    width: 70vw;
+    height: 400px;
+}
