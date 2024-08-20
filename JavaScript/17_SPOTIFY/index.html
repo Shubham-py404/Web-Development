@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>spotify</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
-</head>
-<body>
-    <img src="Spotify-Logo.wine.svg" alt="logo">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
     <div class="container flex">
-        <div class="left border">
-            <div class="home"></div>
-            <div class="library"></div>
+      <div class="left">
+        <div class="home bg-black rounded margin P-1">
+
+          <div class="logo"><img src="Spotify-Logo.wine.svg" alt="logo"/></div>
+          <ul>
+            <li><img class="invert" src="home.svg" alt="Home"/>Home</li>
+            <li><img class="invert" src="search.svg" alt="search" />Search</li>
+          </ul>
         </div>
-        <div class="right border"></div>
+        <div class="library bg-black rounded margin P-1">Your Library</div>
+      </div>
+      <div class="right border"></div>
     </div>
-    
-</body>
+  </body>
 </html>

@@ -11,3 +11,19 @@
 .items-center{
     align-items: center;
 }
+.bg-black{
+    background-color: rgb(16, 16, 16);
+    color: white  ;
+}
+.invert{
+    filter: invert(1);
+}
+.rounded{
+    border-radius: 7px;
+}
+.margin{
+    margin: 2px;
+}
+.P-1{
+    padding: 10px;
+ }

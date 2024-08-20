@@ -1,14 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: black;
     color: white;
 }
 
 .left{
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(73, 73, 73);
     width: 30vw;
-    height: 200px;
+    height: 700px;
+    padding: 10px;
+}
+.home{
+    margin: 5px;
+    padding: 0px;
 }
 
+.home ul li{
+    gap: 2px;
+    display: flex;
+    width: 25px;
+    color: white;
+    padding: 20px;
+    list-style: none;
+    padding-top:14px ;
+}
 .right{
     background-color: rgb(16, 16, 16);;
     width: 70vw;
