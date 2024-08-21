@@ -12,8 +12,11 @@
     align-items: center;
 }
 .bg-black{
-    background-color: rgb(16, 16, 16);
+    background-color: #121212;
     color: white  ;
+}
+.bg-grey{
+    background-color: rgb(14, 14, 14);
 }
 .invert{
     filter: invert(1);
