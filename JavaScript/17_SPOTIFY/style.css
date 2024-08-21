@@ -12,18 +12,18 @@ body{
     background-color: rgb(73, 73, 73);
     width: 30vw;
     height: 700px;
-    padding: 10px;
+    padding: 0px;
 }
 .home{
     margin: 5px;
-    padding: 0px;
 }
 
 .home ul li{
-    font-family: "spotify 3";
+    align-items: center;
+    font-family: "spotify 3", CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
     font-weight: 700;
     font-size: 16px;
-    gap: 2px;
+    gap: 16px;
     display: flex;
     width: 25px;
     color: white;
@@ -35,4 +35,18 @@ body{
     background-color: rgb(16, 16, 16);;
     width: 70vw;
     height: 400px;
+}
+.heading{
+    align-items: center;
+    padding: 20px;
+    font-size: 10px;
+    font-family: "spotify 3";
+    display: flex;
+    gap: 16px;
+    width: 156px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.heading img{
+    width: 25px;
 }
