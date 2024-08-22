@@ -80,6 +80,7 @@ body{
     padding: 16px;
 }
 .spotify-playlist .card{
+    position: relative;
     padding: 10px;
     margin: 2px;
     background-color: rgb(34, 34, 34);
@@ -100,4 +101,29 @@ body{
 .card img{
     width: 100%;
     object-fit: contain;
+}
+.play{
+
+    position: absolute;
+    top: 113px;
+    right: 21px;
+}
+.Buttoninner .IconWrapper{
+    box-shadow:0px 0px 8px 0px black;
+    bottom: 14px;
+    display: block;
+    width: 41px;
+    height: 41px;
+    padding: 5px;
+    border-radius: 9999px;
+    background-color: #3be477;
+
+}
+.Buttoninner .IconWrapper svg{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding:10.6px;
+    height: 20px;
 }
