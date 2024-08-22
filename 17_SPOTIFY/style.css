@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: black;
+    color: white;
+}
+
+.left{
+    background-color: rgb(0, 0, 0);
+    width: 35vw;
+    /* height: 700px; */
+}
+.home{
+    margin: 5px;
+}
+
+.home ul li{
+    align-items: center;
+    font-family: "spotify 7", CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    font-weight: 700;
+    font-size: 16px;
+    gap: 16px;
+    display: flex;
+    width: 25px;
+    color: white;
+    padding: 20px;
+    list-style: none;
+    padding-top:14px ;
+}
+.right{
+    font-family: "spotify 3", CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    margin: 3px 4px;
+    padding: 3px;
+    background-color: #121212;
+    width: 80vw;
+    height: 700px;
+}
+
+
+.heading{
+    align-items: center;
+    padding: 20px;
+    font-size: 10px;
+    font-family:  "spotify 3", "Helvetica Neue", helvetica, arial, "Hiragino Kaku Gothic ProN", Meiryo, "MS Gothic";
+    display: flex;
+    gap: 16px;
+    width: 156px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+.heading img{
+    width: 25px;
+}
+.library{
+    position: relative;
+    min-height: 60vh;
+}
+.footer{
+    flex-wrap: wrap;
+    padding: 20px 4px;
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    bottom: 0;
+    position: absolute;
+}
+.footer a {
+    color: grey;
+}
+.header{
+    background-color: rgb(15, 15, 15);
+    justify-content: space-between;
+    display: flex;
+}
+.header>*{
+    padding: 20px;
+}
+.spotify-playlist{
+    padding: 16px;
+    max-height: 50vh;
+}
+.spotify-playlist .card{
+    cursor: pointer;;
+    position: relative;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 12px;
+    background-color: rgb(29, 29, 29);
+    width: 160px;
+    font-weight: bolder;
+    padding: 13px;
+}
+.card:hover{
+    background-color: rgb(35, 35, 35);
+}
+.CardContainer{
+    margin: 20px;
+    padding: 15px 2px 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    max-height: 65vh;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    background-color: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(56, 56, 56);
+    /* border-radius: 5px; */
+}
+
+.card>*{
+    padding-top: 5px;
+}
+.card img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: contain;
+}
+.card:hover img{
+    box-shadow: 0px 5px 5px 0px black;
+}
+.play{
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    opacity: 0;
+    position: absolute;
+    top: 130px;
+    right: 19px;
+}
+.play:hover .IconWrapper{
+    background-color: #3be477;
+}
+.card:hover .play{
+    top: 122px;
+    opacity: 1;
+}
+.Buttoninner .IconWrapper{
+    box-shadow:0px 0px 8px 0px black;
+    bottom: 14px;
+    display: block;
+    width: 33px;
+    height: 33px;
+    padding: 5px;
+    border-radius: 9999px;
+    background-color: #2fb85f;
+
+}
+.Buttoninner .IconWrapper svg{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding:6.5px;
+    height: 20px;
+}
+.buttons button{
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+.signup{
+   border: none;
+   color: #a7a7a7;
+   background-color: transparent;
+   margin-right: 30px;
+}
+.signup:hover{
+    color: #e1e1e1;
+    font-size: 16.5px;
+}
+.login{
+    margin: 4px;
+    border: solid white;
+    border-radius:25px ;
+    width: 106px;
+    height: 47px;
+    padding: 10px;
+    cursor: pointer;
+}
+.login:hover{
+    font-size: 16.5px;
+    width: 108px;
+    height: 49px;
+    padding: 12px;
+}
