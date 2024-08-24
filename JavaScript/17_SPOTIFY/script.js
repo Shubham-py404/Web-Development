@@ -12,11 +12,11 @@ async function getSongs() {
     for (let i = 0; i < as.length; i++) {
         const element = as[i];
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href)
+            let h = element.href.split(".mp3")[0]
+            songs.push(h.split("http://127.0.0.1:5500/17_SPOTIFY/audio/")[1])
         }
     }
     return  songs
-     
 }
 async function main(params) {
 // get the list of all the songs
@@ -25,7 +25,18 @@ async function main(params) {
     
     let songUl = document.querySelector(".songlist").getElementsByTagName("ul")[0]
     for (const song of songs) {
-        songUl.innerHTML = songUl.innerHTML + song;
+        songUl.innerHTML = songUl.innerHTML + `
+        <li>
+            <img src="logos/music.svg" alt="">
+            <div class="info">
+                <div>${song.replaceAll("%20"," ")}</div>
+                <!-- <div>song artist</div> -->
+            </div>
+            <div class="playnow">
+                <span>Now Playing</span>
+                <img class="invert" src="logos/play.svg" alt="">
+            </div>
+        </li>`;
     }
     //playing the songs
     var audio = new Audio(songs[3])

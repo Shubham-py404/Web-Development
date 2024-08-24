@@ -8,11 +8,15 @@ body{
     background-color: black;
     color: white;
 }
-
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
 .left{
     background-color: rgb(0, 0, 0);
-    width: 35vw;
-    /* height: 700px; */
+    width: 23vw;
+    height: 100%;
 }
 .home{
     margin: 5px;
@@ -37,7 +41,7 @@ body{
     margin: 3px 4px;
     padding: 3px;
     background-color: #121212;
-    width: 80vw;
+    width: 76.09vw;
     height: 700px;
 }
 
@@ -58,18 +62,19 @@ body{
 }
 .library{
     position: relative;
-    min-height: 60vh;
+    min-height: 65vh;
 }
 .footer{
-    flex-wrap: wrap;
-    padding: 20px 4px;
     display: flex;
     font-size: 10px;
+    color: grey;
     gap: 13px;
-    bottom: 0;
+    margin:10px ;
     position: absolute;
+    bottom: 0;
+    padding: 20px 2px;
 }
-.footer a {
+.footer  a {
     color: grey;
 }
 .header{
@@ -208,13 +213,17 @@ body{
     font-size: 14.5px;
 }
 .playbar{
+    margin-left: 100px;
+    position: fixed;
     display: flex;
     align-content: center;
     justify-content: center;
     position: absolute;
-    bottom: 0;
-    background-color: rgb(221, 221, 221);
-    width: 92%;
+    bottom: 5px;
+    border: 1px transparent;
+    border-radius: 7px;
+    background-color: rgba(198, 198, 198, 0.823);
+    width: 50vw;
     padding: 12px;
 }
 .songbuttons{
@@ -223,13 +232,45 @@ body{
     width: 16px;
     display: flex;
 }
+.songlist{
+    /* margin: 12px 0; */
+    margin-bottom: 31px;
+    display: block;
+    height: 365px;
+    overflow: auto;
+}
 .songlist ul{
-     padding: 0px 12px;
-     color:  white;
-
+    font-family: "spotify 3";
+    font-size: 13px;
+    padding: 7px 0px;
 }
 .songlist ul li {
-    color:  white;
-    list-style: none;
+    margin: 11px;
+    border: 1px solid white;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: decimal;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 5px 0;
+    padding: 8px;
+    border-radius: 7px;
+}
+.info{
+    width: 100px;
+    font-size: 14px;
+}
+.playnow{
+    cursor: pointer;
+    gap: 7px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playnow span{
+    font-size: 14px;
+    width: 88px;
+    padding:2px;
 }
