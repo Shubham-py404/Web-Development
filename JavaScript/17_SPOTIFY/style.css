@@ -101,6 +101,7 @@ body{
     background-color: rgb(35, 35, 35);
 }
 .CardContainer{
+    width: 100%;
     margin: 20px;
     padding: 15px 2px 12px;
     display: flex;
@@ -207,9 +208,28 @@ body{
     font-size: 14.5px;
 }
 .playbar{
+    display: flex;
+    align-content: center;
+    justify-content: center;
     position: absolute;
     bottom: 0;
-    background-color: rgb(60, 140, 61);
-    width: 100%;
+    background-color: rgb(221, 221, 221);
+    width: 92%;
     padding: 12px;
+}
+.songbuttons{
+    justify-content: center;
+    gap: 20px;
+    width: 16px;
+    display: flex;
+}
+.songlist ul{
+     padding: 0px 12px;
+     color:  white;
+
+}
+.songlist ul li {
+    color:  white;
+    list-style: none;
+    list-style-type: decimal;
 }
