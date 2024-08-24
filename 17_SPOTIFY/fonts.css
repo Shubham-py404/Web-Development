@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "spotify 1";
+    src: url(Spotify-Font/GothamBold.ttf);
+}
+@font-face {
+    font-family: "spotify 2";
+    src: url(Spotify-Font/GothamBoldItalic.ttf);
+}
+@font-face {
+    font-family: "spotify 3";
+    src: url(Spotify-Font/GothamBook.ttf);
+}
+@font-face {
+    font-family: "spotify 4";
+    src: url(Spotify-Font/GothamBookItalic.ttf);
+}
+@font-face {
+    font-family: "spotify 5";
+    src: url(Spotify-Font/GothamLight.ttf);
+}
+@font-face {
+    font-family: "spotify 6";
+    src: url(Spotify-Font/GothamLightItalic.ttf);
+}
+@font-face {
+    font-family: "spotify 7";
+    src: url(Spotify-Font/GothamMedium.ttf);
+}
+@font-face {
+    font-family: "spotify 8";
+    src: url(Spotify-Font/GothamMedium_1.ttf);
+}
+@font-face {
+    font-family: "spotify 9";
+    src: url(Spotify-Font/GothamMediumItalic.ttf);
+}
