@@ -11,14 +11,28 @@ async function getSongs() {
     let songs = []
     for (let i = 0; i < as.length; i++) {
         const element = as[i];
-        if (element.href.endsWith(".mp3")) {
+        if (element.href.endsWith(".mp3"))  {
             let h = element.href.split(".mp3")[0]
             songs.push(h.split("http://127.0.0.1:5500/17_SPOTIFY/audio/")[1])
         }
     }
-    return  songs
+    return songs
 }
-async function main(params) {
+
+let currentsong = new Audio()
+const playMusic = (track) => {    
+    currentsong.src = "http://127.0.0.1:5500/17_SPOTIFY/audio/" + track + ".mp3"
+    currentsong.play();
+    play.src= "logos/play.svg"
+    document.querySelector(".songinfo").innerHTML=track
+    document.querySelector(".songtime").innerHTML="00:00 / 00:00"
+
+}
+
+
+
+async function main() {
+    
 // get the list of all the songs
     let songs = await getSongs()
     console.log(songs);
@@ -34,19 +48,48 @@ async function main(params) {
             </div>
             <div class="playnow">
                 <span>Now Playing</span>
-                <img class="invert" src="logos/play.svg" alt="">
+                <img  class="invert play2" src="logos/play.svg" alt="">
             </div>
         </li>`;
     }
+
+
+// attach an event listener to each song
+    Array.from(document.querySelector(".songlist").getElementsByTagName("li")).forEach(e => {
+        e.addEventListener("click",element=>{
+            console.log(e.querySelector(".info").firstElementChild.innerHTML)
+            playMusic(e.querySelector(".info").firstElementChild.innerHTML.trim())
+        })
+    });
+ 
+// attach an event listener t play next an previous  
+    play.addEventListener("click",()=>{
+        if(currentsong.paused){
+            currentsong.play()
+            play.src="logos/pause.svg"
+        }
+        else{
+            currentsong.pause()
+             play.src="logos/play.svg"
+        }
+    })
+
+
+//listen for time update event
+    currentsong.addEventListener("timeupdate",()=>{
+        console.log(currentsong.currenTime,currentsong.duration);
+        
+    })
+
     //playing the songs
-    var audio = new Audio(songs[3])
+    // var audio = new Audio(songs[2])
     // audio.play();
 
-    audio.addEventListener("loadeddata",()=>{
-    let duration= audio.duration;
-    console.log(audio.duration, audio.currentSrc, audio.currentTime);
+    // audio.addEventListener("loadeddata",()=>{
+    // let duration= audio.duration;
+    // console.log(audio.duration, audio.currentSrc, audio.currentTime);
     
-   })
+//    })
 }
 main() 
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
     <link rel="stylesheet" href="fonts.css" />
+    <link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico">
   </head>
   <body>
     <script src="script.js"></script>
@@ -145,20 +146,21 @@
                 </div>
               </div>
               <div class="playbar">
-                <div class="songinfo">
-
+                <div class="seekbar">
+                  <div class="circle"></div>
                 </div>
-                <div class="songbuttons">
-                  <img src="logos/previous.svg" alt="prev">
-                  <img src="logos/play.svg" alt="play">
-                  <img src="logos/forward.svg" alt="forward">
-                </div>
-                <div class="songtime">
-
+                
+                <div class="abovebar">
+                  <div class="songinfo">   </div>
+                  <div  class="songbuttons">
+                    <img id="prev" class="invert" src="logos/previous.svg" alt="prev">
+                    <img id="play" class="invert" src="logos/play.svg" alt="play">
+                    <img id ="next" class="invert" src="logos/forward.svg" alt="forward">
+                  </div>
+                  <div class="songtime">   </div> 
                 </div>
               </div>
           </div>
-
         </div>
     </div>
   </body>

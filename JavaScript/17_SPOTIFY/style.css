@@ -112,7 +112,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 9px;
-    max-height: 65vh;
+    max-height: 70vh;
     overflow-y: scroll;
 }
 ::-webkit-scrollbar {
@@ -211,8 +211,9 @@ body{
     padding: 11px;
     width: 93px;
     font-size: 14.5px;
-}
+} 
 .playbar{
+    height: 40px;
     margin-left: 100px;
     position: fixed;
     display: flex;
@@ -221,16 +222,24 @@ body{
     position: absolute;
     bottom: 5px;
     border: 1px transparent;
-    border-radius: 7px;
-    background-color: rgba(198, 198, 198, 0.823);
-    width: 50vw;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.449);
+    width: 42vw;
     padding: 12px;
 }
 .songbuttons{
     justify-content: center;
     gap: 20px;
-    width: 16px;
+    padding-bottom: 10px;
     display: flex;
+}
+.songbuttons img{
+    width: 17px;
+    cursor: pointer;
+
+}
+.songbuttons #play{
+    width: 60px;
 }
 .songlist{
     /* margin: 12px 0; */
@@ -273,4 +282,34 @@ body{
     font-size: 14px;
     width: 88px;
     padding:2px;
+}
+.seekbar{
+    height: 3px;
+    width: 60%;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    bottom: 9px;
+}
+
+.circle{
+    position: relative;
+    width: 11px;
+    height: 11px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 9999px;
+    bottom: 4px;
+    transition: left 0.5s ;
+}
+.abovebar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.songinfo{
+    cursor: pointer;
+}
+.songtime,.songinfo{
+    color: white;
+    padding: 0px 22px;
 }
