@@ -221,13 +221,14 @@ body{
     justify-content: center;
     position: absolute;
     bottom: 5px;
-    border: 1px transparent;
-    border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.449);
-    width: 42vw;
+    border: 2px solid white;
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.838);
+    width: 38vw;
     padding: 12px;
 }
 .songbuttons{
+    margin-right: 72px;
     justify-content: center;
     gap: 20px;
     padding-bottom: 10px;
@@ -284,7 +285,9 @@ body{
     padding:2px;
 }
 .seekbar{
-    height: 3px;
+    cursor: pointer;
+    height: 3.5px;
+    background-color: #e1e1e1;
     width: 60%;
     border-radius: 10px;
     border: 1px solid rgb(255, 255, 255);
@@ -310,6 +313,8 @@ body{
     cursor: pointer;
 }
 .songtime,.songinfo{
+    font-size: 12px;
+    font-family: "spotify 7";
     color: white;
     padding: 0px 22px;
 }
