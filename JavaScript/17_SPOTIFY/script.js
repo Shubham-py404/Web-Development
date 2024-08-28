@@ -1,5 +1,6 @@
 console.log("hello from java script");
 let currentsong = new Audio()
+let songs;
 
 function secondsToMinutesSeconds(seconds) {
     if (isNaN(seconds) || seconds < 0) {
@@ -40,10 +41,10 @@ const playMusic = (track,pause= false) => {
     currentsong.src = "http://127.0.0.1:5500/17_SPOTIFY/audio/" + track + ".mp3"
     if(!pause){
         currentsong.play();
-
+        play.src= "logos/pause.svg"
     }
 
-    play.src= "logos/play.svg"
+  
     document.querySelector(".songinfo").innerHTML=decodeURI(track)
     document.querySelector(".songtime").innerHTML="00:00 / 00:00"
 
@@ -54,7 +55,7 @@ const playMusic = (track,pause= false) => {
 async function main() {
     
 // get the list of all the songs
-    let songs = await getSongs()
+    songs = await getSongs()
     // console.log(songs);
     currentsong.src = songs[0]
     playMusic(songs[0],pause = true)
@@ -89,17 +90,17 @@ async function main() {
         if(currentsong.paused){
             currentsong.play()
             play.src="logos/pause.svg"
+            
         }
         else{
             currentsong.pause()
-             play.src="logos/play.svg"
+            play.src="logos/play.svg"
         }
     })
 
 
 //listen for time update event
     currentsong.addEventListener("timeupdate",()=>{
-        console.log(currentsong.currenTime,currentsong.duration);
         document.querySelector(".songtime").innerHTML=`${secondsToMinutesSeconds(currentsong.currentTime)}/${ secondsToMinutesSeconds(currentsong.duration)}`
         document.querySelector(".circle").style.left = (currentsong.currentTime / currentsong.duration) * 100 + "%";  
       })
@@ -112,6 +113,39 @@ async function main() {
         currentsong.currentTime=  ((currentsong.duration)*TP)/100        
     })
 
+// add a event ;istener in hamburger
+    document.querySelector(".ham").addEventListener("click",e=>{
+        document.querySelector(".left").style.left=0;
+    })
+    document.querySelector(".close").addEventListener("click",e=>{
+        document.querySelector(".left").style.left=-120+"%";
+    })
+
+
+// add a event listener to the prev and forwardet buttons
+    prev.addEventListener("click", () => {
+        let index1 = songs.indexOf(currentsong.src.split("/").slice(-1)[0].replace(".mp3", ""));
+        if (index1 > 0) {
+            playMusic(songs[index1 - 1]);
+        } else {
+            playMusic(songs[songs.length - 1]); // Go to the last song if on the first song
+        }
+    });
+
+    next.addEventListener("click", () => {
+        let index1 = songs.indexOf(currentsong.src.split("/").slice(-1)[0].replace(".mp3", ""));
+        if (index1 < songs.length - 1) {
+            playMusic(songs[index1 + 1]);
+        } else {
+            playMusic(songs[0]); // Go to the first song if on the last song
+        }
+    });
+
+// add an event to volume 
+    document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change",(e)=>{
+        currentsong.volume=parseInt(e.target.value)/100
+        
+    })
 
 }
 main() 

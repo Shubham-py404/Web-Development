@@ -18,6 +18,14 @@ body{
     width: 23vw;
     height: 100%;
 }
+
+.close{
+    display: none;
+}
+.close:hover{
+    width: 35px;
+}
+
 .home{
     margin: 5px;
 }
@@ -43,6 +51,13 @@ body{
     background-color: #121212;
     width: 76.09vw;
     height: 700px;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
 }
 
 
@@ -87,6 +102,16 @@ body{
 .header>*{
     padding: 17px;
 }
+
+.ham{
+    cursor: pointer;
+   display: none;
+   padding-right: 13px;
+}
+.ham:hover{
+    width: 34px;
+}
+
 .spotify-playlist{
     padding: 16px;
     max-height: 50vh;
@@ -113,7 +138,7 @@ body{
     flex-wrap: wrap;
     gap: 9px;
     max-height: 70vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 ::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -221,9 +246,9 @@ body{
     justify-content: center;
     position: absolute;
     bottom: 5px;
-    border: 2px solid white;
-    border-radius: 18px;
-    background-color: rgba(0, 0, 0, 0.838);
+    border: 2px solid transparent;
+    border-radius: 13px;
+    background-color: rgba(161, 161, 161, 0.838);
     width: 38vw;
     padding: 12px;
 }
@@ -310,11 +335,31 @@ body{
     justify-content: space-between;
 }
 .songinfo{
+    width: 149px;
     cursor: pointer;
+}
+.songtime{
+    width: 65px;
 }
 .songtime,.songinfo{
     font-size: 12px;
     font-family: "spotify 7";
     color: white;
     padding: 0px 22px;
+}
+.range input{
+    width: 85px;
+}
+.timevol{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.volume{
+    width: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 9px;
+    justify-content: center;
 }

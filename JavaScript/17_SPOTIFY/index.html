@@ -15,7 +15,10 @@
     <div class="container flex">
         <div class="left">
             <div class="home bg-black rounded margin P-1">
-              <div class="logo"><img src="logos/Spotify-Logo.wine.svg" alt="logo"/></div>
+              <div class="flex closed">
+                <div class="logo"><img src="logos/Spotify-Logo.wine.svg" alt="logo"/></div>
+                <div class="close"><img src="logos/cross.svg" alt="cross"></div>
+              </div>
               <ul>
                 <li><img class="invert" src="logos/home.svg" alt="Home"/>Home</li>
                 <li><img class="invert" src="logos/search.svg" alt="search" />Search</li>
@@ -40,11 +43,12 @@
                 <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
               </div>
             </div>
-          <div>
+          <div> 
         </div>
         <div class="right bg-grey ">
           <div class="header">
             <div class="nav">
+              <img class="ham" src="logos/ham.svg" alt="ham">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="25" height="25" color="#ffffff" fill="none">
                 <path d="M15 6C15 6 9.00001 10.4189 7.5 12C8.99999 13.5812 15 18 15 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
@@ -158,7 +162,14 @@
                     <img id="play" class="invert" src="logos/play.svg" alt="play">
                     <img id ="next" class="invert" src="logos/forward.svg" alt="forward">
                   </div>
-                  <div class="songtime">   </div> 
+                  <div class="timevol">
+                    <div class="songtime">   </div> 
+                    <div class="volume">
+                      <img src="logos/volume.svg" alt="" width="20px"></div>             
+                      <div class="range">
+                        <input type="range" name = "volume" placeholder="volume" > 
+                      </div>       
+                  </div>
                 </div>
               </div>
           </div>
