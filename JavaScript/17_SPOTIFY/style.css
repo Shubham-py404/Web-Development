@@ -161,7 +161,7 @@ body{
 .card:hover img{
     box-shadow: 0px 5px 5px 0px black;
 }
-.play{
+.playy{
     cursor: pointer;
     transition: all 0.25s ease-out;
     opacity: 0;
@@ -169,10 +169,10 @@ body{
     top: 130px;
     right: 19px;
 }
-.play:hover .IconWrapper{
+.playy:hover .IconWrapper{
     background-color: #3be477;
 }
-.card:hover .play{
+.card:hover .playy{
     top: 122px;
     opacity: 1;
 }
@@ -362,4 +362,8 @@ body{
     gap: 5px;
     margin: 9px;
     justify-content: center;
+}
+.range input{
+    cursor: pointer;
+    /* accent-color: rgb(39, 226, 110); */
 }
