@@ -7,7 +7,7 @@ function secondsToMinutesSeconds(seconds) {
         return "00:00";
     }
     const minutes = Math.floor(seconds / 60);
-    const remainingSeconds = Math.floor(seconds % 60);
+    const remainingSeconds = Math.floor(seconds % 60); 
 
     const formattedMinutes = String(minutes).padStart(2, '0');
     const formattedSeconds = String(remainingSeconds).padStart(2, '0');
@@ -94,8 +94,10 @@ async function displayAlbums() {
                     </span>
                 </div>
                 <img src="audio/${folder}/cover.jpeg" alt="song">
-                <h2>${response.title}</h2>
-                <p>${response.description} </p>
+                <div class="infocont">
+                    <h2>${response.title}</h2>
+                    <p>${response.description}</p>
+                </div>
             </div>`
         }
     }
@@ -107,7 +109,6 @@ async function displayAlbums() {
         e.addEventListener("click", async (item)=>{
             // console.log(item.currentTarget.dataset);
             songs = await getSongs(`audio/${item.currentTarget.dataset.folder}`)
-            // playMusic(songs[0])
         })
     })
 
@@ -189,7 +190,12 @@ async function main() {
 // add an event to volume 
     document.querySelector(".range").getElementsByTagName("input")[0].addEventListener("change",(e)=>{
         currentsong.volume=parseInt(e.target.value)/100
-        
+        if (currentsong.volume>0) {
+            document.querySelector(".volume>img").src=document.querySelector(".volume>img").src.replace("logos/mute.svg","logos/volume.svg")
+        }
+        else{
+            document.querySelector(".volume>img").src=document.querySelector(".volume>img").src.replace("logos/volume.svg","logos/mute.svg")
+        }
     })
 
 // add mute button

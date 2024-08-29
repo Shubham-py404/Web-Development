@@ -15,7 +15,7 @@ body{
 }
 .left{
     background-color: rgb(0, 0, 0);
-    width: 23vw;
+    width: 22vw;
     height: 100%;
 }
 
@@ -117,13 +117,13 @@ body{
     max-height: 50vh;
 }
 .spotify-playlist .card{
-    cursor: pointer;;
+    cursor: pointer;
     position: relative;
     padding: 10px;
     margin: 2px;
     border-radius: 12px;
     background-color: rgb(29, 29, 29);
-    width: 160px;
+    width: 133px;
     font-weight: bolder;
     padding: 13px;
 }
@@ -132,13 +132,26 @@ body{
 }
 .CardContainer{
     width: 100%;
-    margin: 20px;
-    padding: 15px 2px 12px;
+    margin: 22px 2px;
+    padding: 11px 0px 8px;
     display: flex;
     flex-wrap: wrap;
-    gap: 9px;
+    gap: 7px;
     max-height: 70vh;
-    overflow-y: auto;
+    overflow-y: auto
+}
+.infocont{
+    text-wrap: wrap;
+    height: 61px;
+    align-content: center;
+
+}
+.card h2{
+    font-size:20px;
+}
+.card p{
+    padding-top:9px ;
+    font-size: 13px;
 }
 ::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -173,7 +186,7 @@ body{
     background-color: #3be477;
 }
 .card:hover .playy{
-    top: 122px;
+    top: 99px;
     opacity: 1;
 }
 .Buttoninner .IconWrapper{
@@ -223,7 +236,7 @@ body{
     font-size: 16.5px;
 }
 .login{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     font-weight: 600;
     font-size: 14px;
     border: solid white;
@@ -253,7 +266,7 @@ body{
     padding: 12px;
 }
 .songbuttons{
-    margin-right: 72px;
+    margin-right: -13px;
     justify-content: center;
     gap: 20px;
     padding-bottom: 10px;
@@ -342,7 +355,7 @@ body{
     width: 65px;
 }
 .songtime,.songinfo{
-    font-size: 12px;
+    font-size: 15px;
     font-family: "spotify 7";
     color: white;
     padding: 0px 22px;
@@ -351,9 +364,13 @@ body{
     width: 85px;
 }
 .timevol{
+  
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+.timevol .songtime{
+    font-size: 14px;
 }
 .volume{
     width: 20px;
