@@ -47,8 +47,21 @@ console.log(str.trim());-- heelloo
 
 // for each -
 // ye function array ke saath kaam krta hai ise ek funciton chahiye perform krne ke liye 
-let arr = []
-arr.forEach(helo)
-function helo(){
+let arr = [1,2,3,4]
+ arr.forEach((item, index )=>{
+    console.log(item);
+})
+
+// just like for loop ye bhi arr ke element(item) unke index ko ek ek krke function mai bhejta hai 
     
-}
+// stopPropagation-
+// jb div ke andar div hota hai toh 2nd linstner active na ho isliye use hota hai yeh 
+e.addEventListener("click",event=>{
+    event.stopPropagation()
+})
+
+
+// closest- 
+// let folder = e.closest('.card').dataset.folder;
+// yeh apne sbse nearest card ke folder ko access krega ga mtlb agr sbki class same hai hai toh closes usko lega jo uske attribute ke sbse pass hai -
+document.querySelector(".hell").closest(".card")
