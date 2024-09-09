@@ -1,0 +1,17 @@
+{
+  "name": "08_exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.mongodb.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.6.1"
+  }
+}
