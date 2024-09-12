@@ -33,3 +33,10 @@ step 5:  Run the following command :
 ``` 
 npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
 ```
+
+step 6: paste these two lines in html file :
+```
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="src/output.css ">
+
+```
