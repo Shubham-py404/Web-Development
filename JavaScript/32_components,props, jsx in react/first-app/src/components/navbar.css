@@ -1,0 +1,13 @@
+  ul{
+    padding: 15px;
+    background-color: rgb(9, 9, 135);
+    color: white;
+    display: flex;
+    list-style: none;
+    gap: 50px;
+
+  }
+
+.like{
+    color: brown;
+}

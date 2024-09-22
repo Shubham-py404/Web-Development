@@ -1,0 +1,10 @@
+.card{
+    height: 80px;
+    width: 500px;
+    padding: 20px;
+    margin: 8px;
+    border: 1px solid black;
+}
+.card p{
+    padding-top: 20px;
+}
